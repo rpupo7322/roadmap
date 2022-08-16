@@ -1,12 +1,15 @@
 import React from "react";
+import MindMap from "react-mindmap";
+import map from "../Components/Map";
 import NavBar from "../Components/NavBar";
 
 const Home = () => {
+
+
   return (
     <div>
-      {/* <NavBar /> */}
-      <p>Empty page</p>
-      
+      <NavBar />
+
     </div>
   );
 };

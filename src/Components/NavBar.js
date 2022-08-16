@@ -7,9 +7,9 @@ import {
   Nav,
   NavItem,
   NavLink,
-//   NavbarText,
+  NavbarText,
 } from "reactstrap";
-// import "./NavBar.css";
+import "./NavBar.css";
 
 const NavBar = (props) => {
 
@@ -22,9 +22,7 @@ const NavBar = (props) => {
   return (
     <>
       <Navbar className="navbar" default expand="md">
-        <NavbarBrand href="">
 
-        </NavbarBrand>
         {/* <NavbarBrand href="/">Train GRC</NavbarBrand> */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -34,7 +32,7 @@ const NavBar = (props) => {
                 className="nav-link-text"
                 href=""
               >
-                ACADEMY
+                HOME
               </NavLink>
             </NavItem>
             <NavItem>
@@ -43,7 +41,7 @@ const NavBar = (props) => {
                 // style={{ color: "black" }}
                 href=""
               >
-                LABS
+                FRONT END
               </NavLink>
             </NavItem>
             <NavItem>
@@ -52,19 +50,18 @@ const NavBar = (props) => {
                 // style={{ color: "black" }}
                 href=""
               >
-                SOLUTIONS
+                BACK END
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
-                className="nav-link-text"
+                className="last1 nav-link-text"
                 // style={{ color: "black" }}
                 href=""
               >
-                BLOG
+                ABOUT
               </NavLink>
             </NavItem>
-
           </Nav>
         </Collapse>
       </Navbar>

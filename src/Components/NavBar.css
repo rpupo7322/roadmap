@@ -1,0 +1,107 @@
+.body {
+    color: black;
+}
+.navbar {
+    background-color: white;
+}
+
+.logo {
+    margin-left: 60px;
+}
+
+.navbar-toggler {
+    
+    background-image: url("https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"); 
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.navbar-toggler-icon { 
+    background-image: url("https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"); 
+    background-color: black;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    color: black;
+}
+
+.navbar-light {
+    color: black;
+}
+
+
+.nav-link {
+    display:flex;
+    align-items: center;
+    line-height: 50%;
+    font-size: 11px;
+    font-family: arial, sans-serif;
+    color: black;
+    padding-right: 0px;
+}
+
+.nav-item {
+    border-bottom:4px solid white;
+    border-top:4px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+
+.last1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 65px;
+}
+
+.nav-link::after {
+    content: "";
+    border-left: 3px solid #FFCC04;
+    /* left: 10px; */
+    height:40px;
+    margin-left: 15px;
+    padding-left: 5px;
+    margin-right: -15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    /* width: 30px; */
+}
+
+.nav-link.last1::after{
+    content: "";
+    border-left: 4px solid white;
+    /* left: 10px; */
+    height:40px;
+    margin-left: 10px;
+    margin-right: -20px;
+    /* width: 30px; */
+}
+
+
+.nav-link-text:hover {
+    color:#2b55a1;
+}
+
+.nav-item:hover {
+    border-bottom:4px solid #2b55a1;
+    border-top:4px solid #2b55a1;
+    transition: .5s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-link::after{
+        content: "";
+        border-left: 4px solid white;
+        height:40px;
+    }
+    .last1 {
+        width: auto;
+    }
+}
